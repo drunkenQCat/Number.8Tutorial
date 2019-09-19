@@ -1,0 +1,215 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>录音间教程标签</title><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 2; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px !important; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { padding-left: 32px; padding-right: 32px; padding-bottom: 0px; break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none 0s ease 0s; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="mermaid"] svg, [lang="flow"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+
+
+html { font-size: 19px; }
+html, body { margin: auto; background: rgb(254, 254, 254); }
+body { font-family: Vollkorn, Palatino, Times; color: rgb(51, 51, 51); line-height: 1.4; text-align: justify; }
+#write { max-width: 960px; margin: 0px auto 2em; line-height: 1.53; padding-top: 40px; }
+#write > h1:first-child, h1 { margin-top: 1.6em; font-weight: normal; }
+h1 { font-size: 3em; }
+h2 { margin-top: 2em; font-weight: normal; }
+h3 { font-weight: normal; font-style: italic; margin-top: 3em; }
+h1, h2, h3 { text-align: center; }
+h2::after { border-bottom: 1px solid rgb(47, 47, 47); content: ""; width: 100px; display: block; margin: 0px auto; height: 1px; }
+h1 + h2, h2 + h3 { margin-top: 0.83em; }
+p, .mathjax-block { margin-top: 0px; }
+ul { list-style: square; padding-left: 1.2em; }
+ol { padding-left: 1.2em; }
+blockquote { margin-left: 1em; padding-left: 1em; border-left: 1px solid rgb(221, 221, 221); }
+code, pre { font-family: Consolas, Menlo, Monaco, monospace, serif; font-size: 0.9em; background: white; }
+.md-fences { margin-left: 1em; padding-left: 1em; border: 1px solid rgb(221, 221, 221); padding-bottom: 8px; padding-top: 6px; margin-bottom: 1.5em; }
+a { color: rgb(36, 132, 193); text-decoration: none; }
+a:hover { text-decoration: underline; }
+a img { border: none; }
+h1 a, h1 a:hover { color: rgb(51, 51, 51); text-decoration: none; }
+hr { color: rgb(221, 221, 221); height: 1px; margin: 2em 0px; border-top: 1px solid rgb(221, 221, 221); border-bottom: none; border-left: 0px; border-right: 0px; }
+.ty-table-edit { background: rgb(237, 237, 237); padding-top: 4px; }
+table { margin-bottom: 1.33333rem; }
+table th, table td { padding: 8px; line-height: 1.33333rem; vertical-align: top; border-top: 1px solid rgb(221, 221, 221); }
+table th { font-weight: bold; }
+table thead th { vertical-align: bottom; }
+table caption + thead tr:first-child th, table caption + thead tr:first-child td, table colgroup + thead tr:first-child th, table colgroup + thead tr:first-child td, table thead:first-child tr:first-child th, table thead:first-child tr:first-child td { border-top: 0px; }
+table tbody + tbody { border-top: 2px solid rgb(221, 221, 221); }
+.task-list { padding: 0px; }
+.md-task-list-item { padding-left: 1.6rem; }
+.md-task-list-item > input::before { content: "√"; display: inline-block; width: 1.33333rem; height: 1.6rem; vertical-align: middle; text-align: center; color: rgb(221, 221, 221); background-color: rgb(254, 254, 254); }
+.md-task-list-item > input:checked::before, .md-task-list-item > input[checked]::before { color: inherit; }
+.md-tag { color: inherit; font: inherit; }
+#write pre.md-meta-block { min-height: 35px; padding: 0.5em 1em; }
+#write pre.md-meta-block { white-space: pre; background: rgb(248, 248, 248); border-width: 0px 30px; border-top-style: initial; border-bottom-style: initial; border-top-color: initial; border-bottom-color: initial; border-image: initial; color: rgb(153, 153, 153); width: 100vw; max-width: calc(100% + 60px); margin-left: -30px; border-left-style: solid; border-left-color: rgb(248, 248, 248); border-right-style: solid; border-right-color: rgb(248, 248, 248); margin-bottom: 2em; margin-top: -1.33333rem; padding-top: 26px; padding-bottom: 10px; line-height: 1.8em; font-size: 0.76em; padding-left: 0px; }
+.md-img-error.md-image > .md-meta { vertical-align: bottom; }
+#write > h5.md-focus::before { top: 2px; }
+.md-toc { margin-top: 40px; }
+.md-toc-content { padding-bottom: 20px; }
+.outline-expander::before { color: inherit; font-size: 14px; top: auto; content: ""; font-family: FontAwesome; }
+.outline-expander:hover::before, .outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+#typora-source { font-family: Courier, monospace; color: rgb(106, 106, 106); }
+.html-for-mac #typora-sidebar { box-shadow: rgba(0, 0, 0, 0.176) 0px 6px 12px; }
+.cm-s-typora-default .cm-header, .cm-s-typora-default .cm-property, .CodeMirror.cm-s-typora-default div.CodeMirror-cursor { color: rgb(66, 139, 202); }
+.cm-s-typora-default .cm-atom, .cm-s-typora-default .cm-number { color: rgb(119, 119, 119); }
+.typora-node .file-list-item-parent-loc, .typora-node .file-list-item-time, .typora-node .file-list-item-summary { font-family: arial, sans-serif; }
+.md-task-list-item > input { margin-left: -1.3em; margin-top: calc(1rem - 12px); }
+.md-mathjax-midline { background: rgb(250, 250, 250); }
+.md-fences .code-tooltip { bottom: -2em !important; }
+.dropdown-menu .divider { border-color: rgb(229, 229, 229); }
+
+
+</style>
+</head>
+<body class='typora-export os-windows' >
+<div  id='write'  class = 'is-node'><h1><a name="录音间教程8号）录音间" class="md-header-anchor"></a><span>录音间教程（8号）录音间</span></h1><hr /><blockquote><p><em><span>前言：</span></em></p><ul><li><span>本教程写于2019年九月，历史的车轮滚滚前进，录音的技术也在不断进化，如若录音间有变请以当前状态为准，届时也期待能有新人来更新录音间教程。本教程仅供参考，本人才疏学浅，如有纰漏，还请谅解。</span></li><li><span>其他录音间的教程由于本人精力有限，加之操作大同小异，您可自行探索，或在本文的基础上作更详尽的补充。</span></li></ul></blockquote><h2><a name="目录" class="md-header-anchor"></a><span>目录</span></h2><div class='md-toc' mdtype='toc'><p class="md-toc-content"><span class="md-toc-item md-toc-h1" data-ref="n626"><a class="md-toc-inner" href="#录音间教程8号）录音间">录音间教程（8号）录音间</a></span><span class="md-toc-item md-toc-h2" data-ref="n636"><a class="md-toc-inner" href="#目录">目录</a></span><span class="md-toc-item md-toc-h2" data-ref="n640"><a class="md-toc-inner" href="#写在录音前">写在录音前</a></span><span class="md-toc-item md-toc-h2" data-ref="n656"><a class="md-toc-inner" href="#录音间使用教程">录音间使用教程</a></span><span class="md-toc-item md-toc-h3" data-ref="n658"><a class="md-toc-inner" href="#一--录音间0的意义">一、  录音间“0”的意义</a></span><span class="md-toc-item md-toc-h4" data-ref="n679"><a class="md-toc-inner" href="#一定要防止一定要防止一定要防止"><mark><em>一定要防止</em>，<strong>一定要防止</strong>，<strong><em>一定要防止</em></strong>。</mark></a></span><span class="md-toc-item md-toc-h3" data-ref="n681"><a class="md-toc-inner" href="#二-监听与开关">二、 监听与开关</a></span><span class="md-toc-item md-toc-h3" data-ref="n705"><a class="md-toc-inner" href="#三-录音的准备阶段">三、 录音的准备阶段</a></span><span class="md-toc-item md-toc-h3" data-ref="n745"><a class="md-toc-inner" href="#四软件调整">四、软件调整</a></span><span class="md-toc-item md-toc-h3" data-ref="n779"><a class="md-toc-inner" href="#五正式操作">五、正式操作</a></span><span class="md-toc-item md-toc-h3" data-ref="n841"><a class="md-toc-inner" href="#附大型录音工程的操作">附：大型录音工程的操作</a></span><span class="md-toc-item md-toc-h2" data-ref="n928"><a class="md-toc-inner" href="#后记">后记：</a></span></p></div><hr /><hr /><h2><a name="写在录音前" class="md-header-anchor"></a><span>写在录音前</span></h2><p><span>在这里强烈建议您在开始录音前最好随身携带一根手机数据线，以便于能够在录音间使用网络。这里以华为手机为例，向您演示如何用安卓手机连接电脑的情况下使得电脑连接网络：</span></p><ol start='' ><li><span>将手机连接电脑，打开手机的设置，在顶端搜索栏搜索“</span><em><span>USB网络共享</span></em><span>”；</span></li></ol><p><img src="pics\IMG_20190917_155612.jpg" height="600"  alt="USB网络共享" align=center/></p><ol start='' ><li><span>点击打开USB网络共享功能的开关，电脑上即会提示您确认网络连接，这便意味着这台计算机已经连接上网络。</span></li><li><span>请注意流量使用情况，以免产生不必要的资费。</span></li></ol><blockquote><p><span>对于苹果手机，8号间已安装iTunes。在电脑上打开iTunes之后连接苹果手机即会有提示来帮助您连接网络。</span></p></blockquote><hr /><hr /><h2><a name="录音间使用教程" class="md-header-anchor"></a><span>录音间使用教程</span></h2><h3><a name="一--录音间0的意义" class="md-header-anchor"></a><span>一、  录音间“0”的意义</span></h3><p><a href='#目录'><span>回到目录</span></a><span> </span></p><p>&nbsp;</p><p><img src="pics\IMG_20190917_170328.jpg" height="600"  alt="" align=center/></p><ul><li><p><span>调音台右下角的红色推子推到0意味着所有输入输出调音台的音量都是正常值，没有被放大也没有被衰减。</span></p></li><li><p><span>调音台上各个轨道形状大小相同的十几个灰色推子功能相同，只是每个推子对应控制的是同一列的</span><code>话筒通道</code><span>。推子推到0意味着监听音量，也就是在耳机里和音响里的音量为正常值，没有放大也没有被衰减。</span></p><blockquote><p><span>这是8号间机型（01v96i)独有的设置，当然可以将它调整成与其他录音间一样：用推子调整耳机里和输入电脑里的音量。具体要怎么设置，就有待您自己去说明书中探索了。</span></p></blockquote></li><li><p><span>话筒接口下方的黑色旋钮是</span><code>增益旋钮</code><span>，</span></p></li></ul><p><img src="pics/1568711870218.jpg" height="600"  alt="" align=center/></p><p><span>  它调整的是话筒输入调音台音量的大小，同时也是决定录音波形音量大小的旋钮，使我们录音时主要要调整的。旋钮旋到0（中间）意味着输入音量为正常值，向右为增大，向左为衰减。</span></p><ul><li><code>电平表</code><span>实时监测当前各个话筒输入调音台的音量大小，量表数值到0意味着录音音量达到了极限值，继续以极限状态录音会使得录音质量极差，请一定要防止这样的情况发生。</span></li></ul><p><img src="pics/1568711716179.jpg" height="600"  alt="" align=center/></p><h4><a name="一定要防止一定要防止一定要防止" class="md-header-anchor"></a><mark><em><span>一定要防止</span></em><span>，</span><strong><span>一定要防止</span></strong><span>，</span><strong><em><span>一定要防止</span></em></strong><span>。</span></mark></h4><hr /><h3><a name="二-监听与开关" class="md-header-anchor"></a><span>二、 监听与开关</span></h3><p><a href='#目录'><span>回到目录</span></a><span> </span></p><p><img src="pics\1568712132671.jpg" height="600"  alt="" align=center/></p><ul><li><p><span>请留意调音台的监听耳机以及其插口。耳机插口在调音台的右上角，请注意不要被耳机线绊到以防耳机转接头断裂。</span></p></li><li><p><span>耳机接口下方灰色旋钮为耳机</span><code>监听音量旋钮</code><span>，请在监听时适当旋转以调整至合适的音量。</span></p><ul><li><span>耳机监听音量旋钮旁边的是音响监听音量旋钮。在话筒与音响距离较近时，请确保音响音量较低低值以免引起音响自激啸叫，影响您的听力。</span></li></ul></li><li><p><span>在录音开始后尽量</span><mark><span>将音响监听旋钮调至最低或手动关闭监听音箱</span></mark><span>，否则录音可能会出现异样状况。</span></p></li><li><p><span>如果调音台屏幕处于关闭状态，请检查调音台背后的电源开关是否已按下。</span></p></li></ul><p><img src="pics/1568712163133.jpg" height="600"  alt="" align=center/></p><ul><li><span>若您在试音阶段发现调音台没有示数，请先确认调音台背后的</span><code>幻象供电开关</code><span>是否已打到正确位置。</span></li><li><span>若已打开全部开关但调音台电平表仍无读数，则根据下一节操作进行排查。</span></li></ul><hr /><h3><a name="三-录音的准备阶段" class="md-header-anchor"></a><span>三、 录音的准备阶段</span></h3><p><a href='#目录'><span>回到目录</span></a><span> </span></p><ul><li><p><span>在录音开始前，请确保</span><code>音响监听旋钮</code><span>已向左旋至最低值。</span></p></li><li><p><span>将</span><code>红色推子</code><span>、即将用到的各轨道</span><code>监听推子</code><span>以及相应的</span><code>增益旋钮</code><span>调至0。</span></p><blockquote><p><span>例如：后文中的多人录音实例中需要用到两条轨道两只话筒，就需要同时将红色推子，1、2轨道的监听推子，1、2轨道的增益旋钮调节至0.</span></p></blockquote></li><li><p><span>确认您当前所使用的的轨道上的</span><kbd><strong><span>ON</span></strong></kbd><span>按钮已被点亮，否则调音台电平表将不会有示数。</span></p></li><li><p><span>请根据监听耳机内的声音来判断自己与麦克风的距离是否合适。如果与麦克风的距离太近，您会很明显地听到自己的声音十分沉闷。</span></p><ul><li><span>为确保您的录音质量，请确认麦克风正面朝向您。如图所示为麦克风的正面，在底部有一个明显的商标，接线处也有一个凸起的小扣。</span></li></ul><div align="center">
+<img src="pics/1568712868761.jpg" height="600" alt="话筒正面" align="center/">
+<br><span>话筒正面</span>
+</div><ul><li><span>若是在耳机内听不清自己的声音，请确认</span><code>监听耳机音量旋钮</code><span>是否旋至适当的位置，或是临时将当前麦克风所在轨道的</span><code>监听音量推子</code><span>推高。 </span></li></ul></li><li><p><span>现在请将目光聚焦在调音台的电平表上，以平稳的状态开始念稿试音，边试音边调整话筒所在轨道的增益旋钮，以使得电平表示数能够尽量落在黄色区间内。</span></p></li><li><p><span>若是在稿件中需要您将声音提高到比较激烈的程度，请务必在试音阶段确认清楚届时是否需要额外的音量衰减手段来保证录音音量不超过0（或是电平表的红色区域）。</span></p><ul><li><span>衰减手段1：调音台增益旋钮上方有一个</span><kbd><span>PAD</span></kbd><span>按钮，</span></li></ul><p><img src="pics/1568711870218.jpg" height="600"  alt="" align=center/></p><p>&nbsp;</p></li></ul><p><span>在按钮被按下的状态，可以将录音音量降低20dB。</span></p><ul><li><span>衰减手段2：话筒底端有一个</span><code>PAD</code><span>开关，</span></li></ul><p><span>  </span><img src="pics/1568713045156.jpg" height="600"  alt="" align=center/></p><p><span>将其抠到-10dB档可以使得录音音量降低10分贝，同时在某种程度上可以降低噪音。</span></p><ul><li><span>录音前如果可以请关闭空调以免给后期人员增加不必要的麻烦，也请录音间内不在话筒前的同学</span><strong><span>不要小看电容式麦克风的灵敏度</span></strong><span>，在墙上擦来擦去的声音对于后期来说是极易听见也是极其反感的。</span></li></ul><hr /><h3><a name="四软件调整" class="md-header-anchor"></a><span>四、软件调整</span></h3><p><a href='#目录'><span>回到目录</span></a><span> </span></p><ul><li><p><span>如果录音录不进去或者可以录音但会有异常状态：</span></p><ul><li><p><span>Audition</span></p><ul><li><p><span>请打开</span><code>编辑</code><span>-&gt;</span><code>首选项</code><span>-&gt;</span><code>硬件设置</code><span>，将该界面设置为如下：</span></p><p><img src="pics/批注 2019-09-17 174919硬件.png" weight="600" align=center/></p></li></ul></li></ul></li><li><p><span>如若您无法将其设置成功，请继续看下一节或是</span><a href='#附大型录音工程的操作'><span>打开reaper</span></a><span>。</span></p></li><li><p><span>听不到电脑的声音：  </span></p><ul><li><p><span>Windows</span></p><ul><li><span>对Windows桌面右下角的小喇叭图标点击右键，选择音频设备选项。</span></li></ul><p><img src="pics/批注 2019-09-17 175046声音设备.png" weight="600"  alt="" align=center/></p></li></ul></li><li><p><span>在“录制”选项卡中将“Yamaha 01v96i”启用</span></p><p><img src="pics/批注 2019-09-17 175133录制面板.png" height="600"  alt="" align=center/></p></li><li><p><span>若仍遇到困难</span></p><ul><li><span>确认调音台与电脑的接线是否连接完好。</span></li><li><span>请重启，或祈祷下次有人来之后会把问题解决。</span></li></ul></li></ul><hr /><h3><a name="五正式操作" class="md-header-anchor"></a><span>五、正式操作</span></h3><p><a href='#目录'><span>回到目录</span></a><span> </span></p><blockquote><p><span>本部分内容基于Adobe Audition 2019.如若您使用的是其他软件，请自行查阅相关资料。</span></p></blockquote><ul><li><span>点击</span><code>文件</code><span>-&gt;</span><code>新建</code><span>-&gt;</span><code>音频文件</code><span>，或者在键盘上按</span><kbd><span>下Ctrl</span></kbd><span>+</span><kbd><span>Shift</span></kbd><span>+</span><kbd><span>N</span></kbd><span>，打开新建音频文件对话框。</span></li><li><span>尽量将参数调整为如下图所示。如若有其他需要，可以酌情修改。</span></li></ul><p><img src="pics/批注 2019-09-17 175354新建文件.png" weight="600"  alt="" align=center/></p><ul><li><span>点击电平表上方的红色按钮，开始录音。</span></li></ul><p><img src="pics/批注 2019-09-17 175612录音按钮.png" weight="600"  alt="" align=center/></p><blockquote><p><span>在这里建议您在英文输入法模式下使用快捷键Shift+空格键来进行录音，这样可以略微降低鼠标尖锐声音对录音的影响。</span></p></blockquote><ul><li><span>一段稿件录制完毕后，按下</span><code>空格键</code><span>可以停止录音。</span></li><li><span>如果稿件录制完毕后，其中有读错的地方，按住鼠标左键拖动选中读错的时间区间。打开下方的</span><code>循环按钮</code><span>可以在您按下</span><code>空格</code><span>后反复播放选中的时间区间，以便您实时调整区间长度以及位置，确认该区间是正确的时间区间</span></li></ul><p><img src="pics/循环.gif" align=center/></p><ul><li><span>在录音时请确认</span><code>循环按钮</code><span>已关闭，以免造成不必要的麻烦。</span></li><li><span>对红色录音按钮点击右键，选择“插入开拍模式”，此时录音按钮变成了如下图所示。再次录音会自动预留回卷时间以供您准备状态以及防止杂音录入。</span></li></ul><p><img src="pics/插入开拍.gif" align=center/></p><ul><li><span>此时再次录音会自动预留回卷时间以供您准备状态以及防止杂音录入。</span></li><li><span>当时间指针走到您需要录音的区间左边缘时，录音正式开始，您可以对这一句以正确的读音和语调来进行录音。</span></li><li><span>当时间指针走到区间的右边缘时，录音自动结束。</span></li></ul><blockquote><p><span>通过该录音功能，您可以灵活高效地对录音进行重录处理。</span></p></blockquote><ul><li><span>如果需要继续录音，请点击录音的结尾处将时间指针放至在那里，以免开始录音后覆盖之前正确的录音，并对录音红点点击右键，将录音模式改为第一种模式。</span></li></ul><p><img src="pics/继续录音.gif" align=center/></p><p>&nbsp;</p><blockquote><p><span>如果想要放弃刚刚的录音或者撤回覆盖录音的操作等，按</span><kbd><span>Ctrl</span></kbd><span>+</span><kbd><span>Z</span></kbd><span>可以撤回上一步错误的操作。</span></p></blockquote><ul><li><span>录音中如果出现了您不希望听到的声音，请按住鼠标左键拖动以选中相应的时间区间，按下键盘上的Delete键以删除这段声音。</span></li></ul><p><img src="pics/删除.gif" align=center/></p><ul><li><span>录音结束后，如果想保存录音，请点击</span><code>文件</code><span>-&gt;</span><code>导出</code><span>-&gt;文件或按下键盘上的快捷键</span><kbd><span>Ctrl</span></kbd><span>+</span><kbd><span>Shift</span></kbd><span>+</span><kbd><span>E</span></kbd><span>(英文输入法下），此时会弹出导出文件对话框。</span></li></ul><p><img src="pics/批注 2019-09-17 181406导出选择.png" height="600"  alt="" align=center/></p><ul><li><span>如果您想要以无损音质保存您的录音，请将格式选择为wave PCM，此时会将录音导出为wav格式。</span></li><li><span>如果您想要以较小的体积打包自己的录音，请将格式选择为MP3音频。</span></li></ul><hr /><h3><a name="附大型录音工程的操作" class="md-header-anchor"></a><span>附：大型录音工程的操作</span></h3><p><a href='#目录'><span>回到目录</span></a><span> </span></p><p><span>在这里本人强烈推荐使用reaper作为录音软件，她的强大功能可以让您耳目一新，涵盖Au所有的录音功能，全新的操作方式让录音更有效率，不仅可以用于单人录音，更能胜任多人录音任务。下面给出Reaper下的双人录音参考方案。当然此方案亦可用于更多人的录音。</span></p><ul><li><h4><a name="事前准备" class="md-header-anchor"></a><span>事前准备</span></h4></li></ul><p><img src="pics/IMG_20190917_205527.jpg" height="600"  alt="" align=center/></p><ul><li><span>把新的话筒搬到录音间，插到调音台相应的卡农口上，记下插有话筒的通道对应卡农口的编号，这里是1、2.</span></li><li><span>将调音台后的两条连接音箱的线拔掉</span>
+<img src="pics/IMG_20190917_205416.jpg" height="600"  alt="" align=center/></li></ul><ul><li><span>连上从其他录音间拿来的新耳机作为第二人的监听耳机。</span>
+<img src="pics/IMG_20190917_205445.jpg" height="600"  alt="" align=center/></li></ul><ul><li><p><span>此时我们调整音箱的音量旋钮可以调整这只耳机的监听音量。</span></p></li><li><p><span>确认刚刚的2通道的</span><kbd><span>Enable</span></kbd><span>已点亮，即可按照上面“录音的准备阶段”部分对第二条话筒通道进行调整。</span></p></li><li><h4><a name="软件操作" class="md-header-anchor"></a><span>软件操作</span></h4><ul><li><span>双击图标打开Reaper。</span></li></ul><p><img src="pics/批注 2019-09-17 181514Reaper.png" weight="600"  alt="" align=center/></p><ul><li><span>点击</span><code>文件</code><span>-&gt;</span><code>新建工程</code><span>或按下快捷键</span><kbd><span>Ctrl</span></kbd><span>+</span><kbd><span>N</span></kbd><span>。</span></li><li><span>双击侧边空白可以新建轨道，这里新建两条轨道。</span></li><li><span>点击第二条轨道上的黑色小三角，在下拉菜单中，将“输入：单声道”修改为刚刚插入的卡农口所对应数码的通道。这里为</span><mark><span>01v96i </span><strong><em><span>02</span></em></strong></mark><span>。</span></li></ul><p><img src="pics/批注 2019-09-17 182156轨道选择.png"   alt="" align=center/></p></li><li><p><span>接下来将所有要录音的轨道左端的红色录音准备按钮点亮，相应轨道的右端会显示其录音音量。</span></p><p><img src="pics/批注 2019-09-17 182223录音准备.png"  alt="" align=center/></p></li><li><p><span>按Alt+G关闭页面中的网格。这些网格会妨碍你的录音。</span></p><p><img src="pics/批注 2019-09-17 182303网格1.png"  alt="" align=center/></p><p>🔽</p><p>🔽<kbd><span>Alt</span></kbd><span>+</span><kbd><span>G</span></kbd></p><p>🔽</p><p><img src="pics/批注 2019-09-17 182328网格2.png"  alt="" align=center/></p></li><li><p><span>点击下方的红色录音按钮或按下快捷键</span><kbd><span>Ctrl</span></kbd><span>+</span><kbd><span>R</span></kbd><span>即可开始对两条轨道同时录音。</span></p><p><img src="pics/录音.gif" align=center/></p><ul><li><span>如果您对刚刚的录音不满意，可以用鼠标点击轨道下方空白处的任意位置来跳转时间到要重新录音的地方，然后再次开始录音。</span></li></ul><p><img src="pics/跳转重录.gif" align=center/></p><ul><li><span>两次录音结束后，Reaper会保留两次录音的波形作为“</span><em><span>可选片段</span></em><span>”。</span></li></ul><p><span>  </span><img src="pics/take讲解.gif" align=center/></p><ul><li><p><span>多次录音的“片段”可以在录音结束后通过单击相应的片段来选择让某一片段激活。被激活的片段处于高亮状态，这一“</span><em><span>对象</span></em><span>”（也就是被分割出来的音频块）便只播放这一个“片段”；其余各次录音的片段处于灰色便被屏蔽静音。</span></p></li><li><p><span>完成录音后可以调整所有“对象”的片段，以在最终录音中保留最佳录音。</span></p></li><li><p><span>右击红色录音按钮，可以发现Reaper的录音有三种模式，这两种模式可以让您在有前句录音承接的情况下进行重录，有利于您更好地调整重录状态，快速完成录音。</span></p><ul><li><span>其中第二种模式类似于Au中的“即时开拍”模式，按住鼠标左键在轨道页面拖动即可作时间选区。您可以自行探索其余Au的区别。</span></li></ul><p><img src="pics/自动切入.gif" align=center/></p><ul><li><span>第三种录音模式：按照选中对象自动切入/切出类似第二种模式，只是录音的范围并不是时间选区而是对象。</span></li><li><span>在启用第二第三种录音模式时，如果录音范围之外留有未被收入的声音时，可以按住Alt拖动</span><em><span>片段</span></em><span>波形，左右滑动音频，直到所有有效声音皆进入录音范围内。</span></li></ul><p><img src="pics/拖拽调整.gif" align=center/></p></li><li><p><code>录音结束后点击文件</code><span>-&gt;生成或键盘快捷键</span><kbd><span>Ctrl</span></kbd><span>+</span><kbd><span>Alt</span></kbd><span>+</span><kbd><span>R</span></kbd><span>，打开Render窗口。</span></p><ul><li><span>如果想要无损音质的录音，请按照下面的参数进行设置。</span></li></ul><p><img src="pics/批注 2019-09-17 202917无损导出.png"   alt="" align=center/></p></li><li><p><span>如果想要小体积的录音，请按照下面的参数进行设置。</span></p><p><img src="pics/批注 2019-09-17 203007压缩音质.png"  alt="" align=center/></p></li></ul></li></ul><h2><a name="后记" class="md-header-anchor"></a><span>后记：</span></h2><p><span>  </span><a href='https://docs.reaget.com/'><span>Reaper</span></a><span>是个神奇的软件，它免费，灵活，可定制，还有很多很多你意想不到的功能。有时间的话可以去了解一下这个软件的更多功能，你会发现一个全新的世界。</span></p><p><span>  </span><a href='#目录'><span>再看一遍</span></a><span> </span></p></div>
+</body>
+</html>
